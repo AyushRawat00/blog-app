@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= locals.title %></title>
+    <meta name="description" content=" <%= locals.description %>">
+    <link type="image/x-icon" rel="icon" href="/img/favicon-main.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" defer src="/js/script.js"></script>
+</head>
+<body>
+    <%- include('../partials/search.ejs') %>
+    <div class="container">
+      <div class="admin-box">
+        <a href="/admin" >ADMIN</a>
+      </div>
+      <%- include('../partials/header.ejs')  %>
+      <main class="main">
+        <%- body %>
+      </main>
+      <%- include('../partials/footer.ejs')  %>
+    </div>  
+    
+    <!-- < %- body %>      different then < %= body %>bcz the  body will be rendered here with its functioning HTML tag that will work similarly of an HTML program -->
+</body>
+</html>
