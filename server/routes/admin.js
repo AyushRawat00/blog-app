@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const bcrypt = require('bcrypt');       //for excypting & decrypting the password
+var bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');    //token based validation
 const Post = require('../models/Post');
 const User = require('../models/User');
